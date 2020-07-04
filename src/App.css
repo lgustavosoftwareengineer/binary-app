@@ -1,21 +1,22 @@
-
 .App {
   flex-direction: row;
   text-align: center;
   color: aliceblue;
-  
+}
+
+@media screen and (max-width: 480px) {
 }
 
 h1 {
   /*color:#3a015c;*/
+  color: #687fa6;
 }
 
-header {
-  margin: 100px;
+p {
+  display: inline;
+  margin: 0 0 0 1rem;
+  color: white;
 }
-/*img {
-  width: 300px;
-}*/
 
 #wrapper {
   flex-direction: row;
@@ -24,17 +25,32 @@ header {
 
 .forms {
   display: block;
-  margin: 6px auto;
-  background-color: #4f0147;
-  border: 2px solid #290025;
+  margin: 2vh auto;
+  background-color: transparent;
+  border: 3px solid #687fa6;
   border-radius: 10px;
-  color:white;
+  width: 20rem;
+  color: #687fa6;
 }
 
-.forms button {
+input[type="text"] {
+  height: 5vh;
+  font-size: 2rem;
+  padding: 1rem;
+}
 
-  
+input[type="text"]:focus {
+  outline: 0;
+}
 
+button {
   width: 100px;
   height: 50px;
+  align-self: center;
+}
+button:hover {
+  background-color: #687fa6;
+  color: #11001c;
+  border-color: #11001c;
+  cursor: pointer;
 }
